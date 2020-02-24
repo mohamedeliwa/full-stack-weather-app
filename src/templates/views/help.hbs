@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{!-- importing a partial --}}
+        {{>header}}
+        {{!-- using data passed to hbs views on rendering --}}
+        <p>{{msg}}</p>
+    </div>
+
+    {{!-- importing a partial --}}
+    {{>footer}}
+</body>
+
+</html>
