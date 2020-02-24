@@ -7,7 +7,8 @@ const geoCode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
 
 const app = express();
-const port = 3000;
+// process.env.PORT: heroku will provide a port to our app in this variable
+const port = process.env.PORT || 3000;
 
 // Getting the absolute path to public folder
 const puplicDirectoryPath = path.join(__dirname, "../public");

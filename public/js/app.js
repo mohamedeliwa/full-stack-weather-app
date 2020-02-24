@@ -14,7 +14,9 @@ addressForm.onsubmit = e => {
   const address = addressInput.value;
   msgOne.textContent = "Loading ...";
   msgTwo.textContent = "";
-  fetch(`http://localhost:3000/weather?address=${encodeURIComponent(address)}`)
+  // using this relative url, will ensure to use localhost if we are running on local host
+  // or to use heroku app url if we are running on heroku
+  fetch(/*`http://localhost:3000*/`/weather?address=${encodeURIComponent(address)}`)
     .then(res => {
       res.json().then(data => {
         if (data.error) {
