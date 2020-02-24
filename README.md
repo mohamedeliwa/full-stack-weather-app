@@ -1,6 +1,7 @@
 # full-stack-weather-app
 a full-stack weather application built using nodejs.  
 It allows the user to get forecast information for a specific location.  
+Link to [Home Page](https://full-stack-weather-app.herokuapp.com/)  
 
 How it Works:
 - The user provides the location through form input in the browser.
